@@ -1,0 +1,10 @@
+@if (type === 'href') {
+    <a [class]="'tfe-link_btn ' + customCls" [href]="href" [target]="target">
+        <ng-content select="[hrefContent]"></ng-content>
+    </a>
+}
+@if (type === 'download') {
+    <a [class]="'tfe-link_btn ' + customCls" [href]="href" [target]="target" download>
+        <ng-content select="[downloadContent]"></ng-content>
+    </a>
+}

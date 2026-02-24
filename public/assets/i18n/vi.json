@@ -1,0 +1,122 @@
+{
+    "SETTING": {
+        "THEME": "Giao diện",
+        "LANG": "Ngôn ngữ"
+    },
+    "PAGE_TITLE": "TFE - Portfolio | Trịnh Thanh Tùng",
+    "HEADER": {
+        "NAME": "Trịnh Thanh Tùng",
+        "WHO": "Tôi Là",
+        "WHO_CONTENT": "<span class='text-highlight'>Lập trình viên Web</span>, là người sẽ biến ý tưởng của bạn thành các hệ thống có <span class='text-highlight'>hiệu suất và khả năng mở rộng cao</span>.",
+        "PAST": "Tôi Có",
+        "PAST_CONTENT_1": "Hơn 4 năm kinh nghiệm xây dựng các ứng dụng web hiện đại với trọng tâm là <span class='text-highlight'>kiến trúc sạch</span> và <span class='text-highlight'>tối ưu hóa hiệu suất</span>.",
+        "PAST_CONTENT_2": "Đóng góp vào các hệ thống đã được đưa vào hoạt động cho các thị trường quốc tế như Singapore, Malaysia và New Zealand.",
+        "NOW": "Hiện Tại",
+        "NOW_FRONTEND": "<span class='text-highlight'>⚡ Lập Trình Web —</span> Chuyên sâu về Angular và TypeScript, biến ý tưởng phức tạp thành các giải pháp web hiệu suất cao, kiến trúc sạch và dễ dàng mở rộng.",
+        "NOW_PROBLEM": "<span class='text-highlight'>🛠️ Giải Quyết Vấn Đề —</span> Kỹ năng sửa lỗi mạnh mẽ, khả năng tối ưu hóa hiệu suất giao diện người dùng cùng quy trình làm việc rõ ràng.",
+        "NOW_AI": "<span class='text-highlight'>🤖 Định Hướng AI —</span> Áp dụng các công cụ AI tiên tiến (ChatGPT, Gemini) để tăng năng suất và đẩy nhanh các tác vụ phát triển.",
+        "NOW_COLLAB": "<span class='text-highlight'>🤝 Người Cộng Tác —</span> Khả năng đã được chứng minh trong việc dẫn dắt và cộng tác cùng các nhóm để đảm bảo sản phẩm đưa đến tay khách hàng chất lượng và đúng hạn.",
+        "NEW_PROD_COMMING": "<span class='text-highlight'>🚀 F____B____ —</span> new product coming soon."
+    },
+    "MAIN": {
+        "PHILOSOPHY": {
+            "TITLE": "Quan điểm công việc",
+            "CONTENT": "<span class='text-highlight'>Mọi thứ đều bắt đầu từ một dòng code sạch -</span> Tôi tin rằng những hệ thống lớn đều có thể được xây dựng trên nền tảng của <span class='text-highlight'>kiến trúc sạch (Clean Architecture)</span> và <span class='text-highlight'>tính mô-đun</span>. Mục tiêu của tôi là <span class='text-highlight'>hiện thực</span> hóa những ý tưởng thiết kế <span class='text-highlight'>UI/UX</span> phức tạp thành các <span class='text-highlight'>hệ thống</span> kỹ thuật hiệu suất cao, đảm bảo mỗi dòng lệnh đều được <span class='text-highlight'>tối ưu</span> và mỗi pixel đều mang một <span class='text-highlight'>giá trị lâu dài</span>."
+        },
+        "PROJECTS": {
+            "TITLE": "Dự Án Đã Tham Gia",
+            "REDOC_TITLE": "🏠 Redoc —",
+            "REDOC_DESC": "Số hóa quy trình quản lý vòng đời bất động sản thông qua tự động hóa tạo hợp đồng và ký trực tuyến.",
+            "LOYALTY_TITLE": "🎁 Loyalty —",
+            "LOYALTY_DESC": "Xây dựng hệ thống quản lý, đặt vé và xác thực người dùng, theo dõi/tích điểm cho các dịch vụ của tập đoàn.",
+            "OMSIM_TITLE": "📦 OMS - IM —",
+            "OMSIM_DESC": "Phát triển giải pháp số nhằm tối ưu và tự động hóa quy trình quản lý và vận hành cho đội ngũ chăm sóc khách hàng, cho phép Nhân viên bán hàng và đại lý quản lý đơn hàng, hàng tồn kho và phê duyệt một cách hiệu quả."
+        },
+        "BUCKET": {
+            "TITLE": "Những Điều Muốn Làm",
+            "ITEM_1": "Thành thạo tiếng Anh.",
+            "ITEM_2": "Học Backend.",
+            "ITEM_3": "Học Business Analyst.",
+            "ITEM_4": "Làm việc từ xa 100%.",
+            "ITEM_5": "Ra mắt một ứng dụng web.",
+            "ITEM_6": "Khởi nghiệp.",
+            "ITEM_7": "Tự tin nói trước đám đông.",
+            "ITEM_8": "Gặp gỡ 3000 người bạn.",
+            "ITEM_9": "Học thiết kế 3D.",
+            "ITEM_10": "Bán đồ in 3D.",
+            "ITEM_11": "Chơi thể thao.",
+            "ITEM_12": "Decor góc làm việc mơ ước.",
+            "ITEM_13": "Đầu tư tỷ đồng vào chứng khoán.",
+            "ITEM_14": "Quyên góp 100 triệu cho VNF.",
+            "ITEM_15": "Viết một bài rap.",
+            "ITEM_16": "Đi khắp Việt Nam.",
+            "ITEM_17": "Chia sẻ mọi thứ lên Youtube.",
+            "ITEM_18": "Xây nhà.",
+            "ITEM_19": "Giúp đỡ bạn bè.",
+            "ITEM_20": "Làm một bộ phim.",
+            "ITEM_21": "Lên mặt trăng.",
+            "ITEM_22": "Gặp bạn 🫵."
+        },
+        "INTERESTS": {
+            "TITLE": "Hệ sinh thái cá nhân",
+            "NODES": {
+                "ECONOMY": "Kinh Tế",
+                "DOMAIN": "Lĩnh Vực",
+                "LEISURE": "Giải Trí",
+                "DIY": "DIY",
+                "TECH": "Công Nghệ",
+                "DESIGN": "Thiết Kế",
+                "LIFESTYLE": "Sở Thích"
+            },
+            "ITEMS": {
+                "STOCK": "Chứng Khoán",
+                "CRYPTO": "Tiền Ảo",
+                "GOLD": "Vàng",
+                "SIX_JARS": "6 Chiếc Hũ",
+                "CMS": "CMS",
+                "LOYALTY": "Loyalty",
+                "ECOMMERCE": "Thương Mại Điện Tử",
+                "NEWS_BLOG": "Tin Tức/Blog",
+                "REAL_ESTATE": "Bất Động Sản",
+                "MUSIC": "Nghe Nhạc",
+                "LOL": "Liên Minh Huyền Thoại",
+                "PHOTOGRAPHY": "Chụp Ảnh",
+                "SNIPER_ARCHER": "Sniper/Archer",
+                "COFFEE": "Cà Phê",
+                "3D_PRINTING": "In 3D",
+                "3D_DESIGN": "Thiết Kế 3D",
+                "MAKER_WORLD": "Maker World",
+                "HANDMADE": "Đồ Thủ Công",
+                "WEBAPP": "Ứng Dụng Web",
+                "BLOCKCHAIN": "Blockchain",
+                "AI": "AI",
+                "AR_VR": "AR/VR",
+                "UIUX_DESIGN": "UI/UX",
+                "ANIMATION": "Animation",
+                "GAME_DESIGN": "Game",
+                "FIGMA": "Figma",
+                "ADOBE": "Adobe",
+                "MINIMALISM": "Tối Giản",
+                "RAP": "Rap",
+                "LANDSCAPE": "Phong Cảnh",
+                "DAILY_LIFE": "Đời Sống",
+                "STREET": "Đường Phố",
+                "INDIE_MUSIC": "Nhạc Indie",
+                "ESPORTS": "Thể Thao Điện Tử",
+                "SPORTS": "Thể Thao",
+                "CAT_LOVER": "Mèo 🐈"
+            }
+        },
+        "CONTACT": {
+            "TITLE": "Liên hệ",
+            "DESC_1": "Tôi giúp bạn xây dựng những sản phẩm bền vững với kiến trúc hệ thống chuẩn mực.",
+            "DESC_2": "Mỗi ngày, tôi dành riêng 4 giờ \"tập trung sâu\" để mang đến những dòng code chất lượng nhất cho dự án của bạn.",
+            "DESC_3_PREFIX": "Bạn đang có ý tưởng? Chỉ cần \"chào\" một tiếng vào",
+            "EMAIL": "Email",
+            "DESC_3_SUFFIX": "cho tôi. Tôi sẽ mời cà phê."
+        }
+    },
+    "FOOTER": {
+        "ADDRESS": "Phú Quốc, Việt Nam, 2023 - ∞."
+    }
+}

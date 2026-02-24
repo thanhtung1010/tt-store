@@ -1,0 +1,71 @@
+@use "variable" as var;
+
+@layer global {
+    .#{var.$primary-prefix-cls} {
+
+        &-theme-primary {
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
+            margin: unset;
+            z-index: inherit;
+            height: 100vh;
+            width: 100vw;
+            box-sizing: border-box;
+            background-color: var(--bg-color);
+            transition: all .3s ease;
+            font-family: 'Mulish', 'Metrophobic', 'KoHo', sans-serif;
+            font-size: var(--font-size);
+            font-weight: var(--font-weight);
+            color: var(--text-color);
+            border-color: var(--border-color);
+            border-style: solid;
+
+            p,
+            span,
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin: unset;
+            }
+
+            * {
+
+                &::-webkit-scrollbar {
+                    width: 4px;
+                    height: 4px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: var(--scroll-bar-color);
+                    border-radius: 2px;
+                }
+
+                &::-webkit-scrollbar:hover {
+                    width: 6px;
+                    height: 6px;
+                }
+
+                &::-webkit-scrollbar-thumb:hover {
+                    background: var(--scroll-bar-hover-color);
+                }
+            }
+
+            ul {
+                padding-inline-start: unset;
+            }
+
+            button {
+                font-weight: inherit;
+                cursor: pointer;
+            }
+        }
+    }
+}

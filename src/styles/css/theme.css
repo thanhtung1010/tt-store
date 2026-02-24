@@ -1,0 +1,53 @@
+@theme {
+    --spacing: 4px;
+
+    --text-sm: var(--text-sm);
+    --text-md: var(--font-size);
+    --text-lg: var(--text-lg);
+
+    --text-slate: var(--color-slate-500);
+    --text-gray: var(--color-gray-500);
+    --text-zinc: var(--color-zinc-500);
+    --text-neutral: var(--color-neutral-500);
+    --text-stone: var(--color-stone-500);
+    --text-red: var(--color-red-500);
+    --text-orange: var(--color-orange-500);
+    --text-amber: var(--color-amber-500);
+    --text-yellow: var(--color-yellow-500);
+    --text-lime: var(--color-lime-500);
+    --text-green: var(--color-green-500);
+    --text-emerald: var(--color-emerald-500);
+    --text-teal: var(--color-teal-500);
+    --text-cyan: var(--color-cyan-500);
+    --text-sky: var(--color-sky-500);
+    --text-blue: var(--color-blue-500);
+    --text-indigo: var(--color-indigo-500);
+    --text-violet: var(--color-violet-500);
+    --text-purple: var(--color-purple-500);
+    --text-fuchsia: var(--color-fuchsia-500);
+    --text-pink: var(--color-pink-500);
+    --text-rose: var(--color-rose-500);
+
+    --bg-slate: var(--color-slate-500);
+    --bg-gray: var(--color-gray-500);
+    --bg-zinc: var(--color-zinc-500);
+    --bg-neutral: var(--color-neutral-500);
+    --bg-stone: var(--color-stone-500);
+    --bg-red: var(--color-red-500);
+    --bg-orange: var(--color-orange-500);
+    --bg-amber: var(--color-amber-500);
+    --bg-yellow: var(--color-yellow-500);
+    --bg-lime: var(--color-lime-500);
+    --bg-green: var(--color-green-500);
+    --bg-emerald: var(--color-emerald-500);
+    --bg-teal: var(--color-teal-500);
+    --bg-cyan: var(--color-cyan-500);
+    --bg-sky: var(--color-sky-500);
+    --bg-blue: var(--color-blue-500);
+    --bg-indigo: var(--color-indigo-500);
+    --bg-violet: var(--color-violet-500);
+    --bg-purple: var(--color-purple-500);
+    --bg-fuchsia: var(--color-fuchsia-500);
+    --bg-pink: var(--color-pink-500);
+    --bg-rose: var(--color-rose-500);
+}

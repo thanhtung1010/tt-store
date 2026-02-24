@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Trinh Thanh Tung, Frontend Developer specializing in Angular. | Portfolio của Trịnh Thanh Tùng, Lập trình viên Web chuyên về Angular.">
+    <meta name="keywords" content="Frontend Developer, Angular Developer, JavaScript, TypeScript, Web Developer, Portfolio, Trinh Thanh Tung, Trịnh Thanh Tùng, Lập trình viên">
+    <meta name="author" content="Trinh Thanh Tung">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tfe.id.vn/">
+    <meta property="og:title" content="Trinh Thanh Tung - Portfolio | Trịnh Thanh Tùng">
+    <meta property="og:description" content="Portfolio of Trinh Thanh Tung, Frontend Developer specializing in Angular. | Portfolio của Trịnh Thanh Tùng, Lập trình viên Web chuyên về Angular.">
+    <meta property="og:image" content="https://www.tfe.id.vn/assets/png/image.png">
+    <meta property="og:site_name" content="Trinh Thanh Tung Portfolio">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.tfe.id.vn/">
+    <meta property="twitter:title" content="Trinh Thanh Tung - Portfolio | Trịnh Thanh Tùng">
+    <meta property="twitter:description" content="Portfolio of Trinh Thanh Tung, Frontend Developer specializing in Angular. | Portfolio của Trịnh Thanh Tùng, Lập trình viên Web chuyên về Angular.">
+    <meta property="twitter:image" content="https://www.tfe.id.vn/assets/png/image.png">
+
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Metrophobic&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GD5RFT278M"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-GD5RFT278M');
+    </script>
+</head>
+
+<body class="tfe-theme-primary">
+    <svg style="display: none">
+        <filter
+            id="glass-distortion"
+            x="0%"
+            y="0%"
+            width="100%"
+            height="100%"
+            filterUnits="objectBoundingBox"
+        >
+            <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0.01 0.01"
+                numOctaves="1"
+                seed="5"
+                result="turbulence"
+            />
+
+            <feComponentTransfer in="turbulence" result="mapped">
+                <feFuncR type="gamma" amplitude="1" exponent="10" offset="0.5" />
+                <feFuncG type="gamma" amplitude="0" exponent="1" offset="0" />
+                <feFuncB type="gamma" amplitude="0" exponent="1" offset="0.5" />
+            </feComponentTransfer>
+
+            <feGaussianBlur in="turbulence" stdDeviation="3" result="softMap" />
+
+            <feSpecularLighting
+                in="softMap"
+                surfaceScale="5"
+                specularConstant="1"
+                specularExponent="100"
+                lighting-color="white"
+                result="specLight"
+            >
+                <fePointLight x="-200" y="-200" z="300" />
+            </feSpecularLighting>
+
+            <feComposite
+                in="specLight"
+                operator="arithmetic"
+                k1="0"
+                k2="1"
+                k3="1"
+                k4="0"
+                result="litImage"
+            />
+
+            <feDisplacementMap
+                in="SourceGraphic"
+                in2="softMap"
+                scale="150"
+                xChannelSelector="R"
+                yChannelSelector="G"
+            />
+        </filter>
+    </svg>
+
+    <tfe-root></tfe-root>
+</body>
+
+</html>

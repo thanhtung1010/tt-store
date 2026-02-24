@@ -1,0 +1,20 @@
+<setting class="tfe-setting"></setting>
+
+<header class="tfe-header tfe-section"></header>
+<main class="tfe-main"></main>
+<footer class="tfe-footer tfe-section"></footer>
+
+@if (loading()) {
+    <div
+        class="tfe-bg-cat-loading"
+        animate.leave="tfe-leave_fade"
+        animate.enter="tfe-enter_fade"
+    ></div>
+    <lottie-animation
+        class="tfe-cat-loading"
+        [config]="lottie()"
+        (readyChange)="lottieStartLoad()"
+        animate.leave="tfe-leave_slide_y tfe-leave_fade"
+        animate.enter="tfe-enter_slide_fade_y"
+    ></lottie-animation>
+}

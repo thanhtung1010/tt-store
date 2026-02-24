@@ -1,0 +1,26 @@
+<section class="tfe-setting-wrapper">
+    @if (visibleSetting()) {
+        <section
+            #settingMenu
+            class="tfe-setting-menu [&>.tfe-setting-item]:last:mb-0"
+            animate.leave="tfe-menu_leave"
+            animate.enter="tfe-menu_enter"
+        >
+            <div class="tfe-setting-item">
+                <label for="theme-mode-btn">{{ 'SETTING.THEME' | translate }}:</label>
+                <theme-toggle id="theme-mode-btn" [value]="layoutService.isThemeDefault()" (click)="layoutService.toggleTheme()">
+                </theme-toggle>
+            </div>
+
+            <div class="tfe-setting-item">
+                <label for="lang-btn">{{ 'SETTING.LANG' | translate }}:</label>
+                <lang-toggle id="lang-btn" [value]="langService.isVI()" (click)="langService.onToggleLang()">
+                </lang-toggle>
+            </div>
+        </section>
+    }
+    <button #settingBtn class="tfe-setting-button" (click)="toggleExpandSetting()">
+        <lottie-animation #rollingCat class="absolute z-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" width="40"
+            height="40" [config]="lottie()"></lottie-animation>
+    </button>
+</section>

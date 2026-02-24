@@ -1,0 +1,122 @@
+{
+    "SETTING": {
+        "THEME": "Theme",
+        "LANG": "Lang"
+    },
+    "PAGE_TITLE": "TFE - Portfolio | Trinh Thanh Tung",
+    "HEADER": {
+        "NAME": "Trinh Thanh Tung",
+        "WHO": "Who",
+        "WHO_CONTENT": "<span class='text-highlight'>Web Developer</span>, focused on turning your ideas into <span class='text-highlight'>high-performing and scalable systems</span>.",
+        "PAST": "Past",
+        "PAST_CONTENT_1": "Over 4 years of experience building modern web applications with a focus on <span class='text-highlight'>clean architecture</span> and <span class='text-highlight'>performance optimization</span>.",
+        "PAST_CONTENT_2": "Contributed to production-ready systems for international markets like Singapore, Malaysia, and New Zealand.",
+        "NOW": "Now",
+        "NOW_FRONTEND": "<span class='text-highlight'>⚡ Web Developer —</span> Expertise in the Angular ecosystem and TypeScript, turning complex ideas into high-performance, scalable web solutions with a focus on clean architecture.",
+        "NOW_PROBLEM": "<span class='text-highlight'>🛠️ Problem Solver —</span> Strong debugging skills, ability to optimize UI performance and clear workflows.",
+        "NOW_AI": "<span class='text-highlight'>🤖 AI-Driven —</span> Applying advanced AI tools (ChatGPT, Gemini) to boost productivity and accelerate development tasks.",
+        "NOW_COLLAB": "<span class='text-highlight'>🤝 Collaborator —</span> Proven ability to lead and collaborate across teams to ensure high-quality, timely production deliveries.",
+        "NEW_PROD_COMMING": "<span class='text-highlight'>🚀 F____B____ —</span> new product coming soon."
+    },
+    "MAIN": {
+        "PHILOSOPHY": {
+            "TITLE": "Core Philosophy",
+            "CONTENT": "<span class='text-highlight'>Everything starts with a single clean line of code -</span> I believe that even the largest systems can be built on the foundation of <span class='text-highlight'>Clean Architecture</span> and the <span class='text-highlight'>modularity</span>. My focus is on turning complex <span class='text-highlight'>UI/UX</span> visions into <span class='text-highlight'>high-performing technical realities</span>, ensuring every function is <span class='text-highlight'>optimized</span> and every pixel serves a clear purpose for the <span class='text-highlight'>long term</span>."
+        },
+        "PROJECTS": {
+            "TITLE": "Joined Projects",
+            "REDOC_TITLE": "🏠 Redoc —",
+            "REDOC_DESC": "Digitalizing the real estate lifecycle through automated contract generation and secure online signing.",
+            "LOYALTY_TITLE": "🎁 Loyalty —",
+            "LOYALTY_DESC": "Built a booking and management system for user authentication and loyalty point tracking within service groups.",
+            "OMSIM_TITLE": "📦 OMS-IM —",
+            "OMSIM_DESC": "Developed a web ordering solution to optimize and automate operational processes for customer care teams, allowing Sales Reps and customers to manage orders, inventory, and approvals efficiently."
+        },
+        "BUCKET": {
+            "TITLE": "Bucket List",
+            "ITEM_1": "Master English.",
+            "ITEM_2": "Learn BE.",
+            "ITEM_3": "Learn BA.",
+            "ITEM_4": "Go 100% remote.",
+            "ITEM_5": "Ship a webapp.",
+            "ITEM_6": "Launch a startup.",
+            "ITEM_7": "Master public speaking.",
+            "ITEM_8": "Meet 3000 friends.",
+            "ITEM_9": "Learn 3D design.",
+            "ITEM_10": "Sell 3D prints.",
+            "ITEM_11": "Play sports.",
+            "ITEM_12": "Set up dream workspace.",
+            "ITEM_13": "Invest billion in stocks.",
+            "ITEM_14": "Donate 100m to VNF.",
+            "ITEM_15": "Write a rap song.",
+            "ITEM_16": "Travel Vietnam.",
+            "ITEM_17": "Share moments on Youtube.",
+            "ITEM_18": "Build a house.",
+            "ITEM_19": "Help friends.",
+            "ITEM_20": "Make a movie.",
+            "ITEM_21": "Go to the Moon.",
+            "ITEM_22": "Meet you 🫵."
+        },
+        "INTERESTS": {
+            "TITLE": "Interests Map",
+            "NODES": {
+                "ECONOMY": "Economy",
+                "DOMAIN": "Domain",
+                "LEISURE": "Leisure",
+                "DIY": "DIY",
+                "TECH": "Tech",
+                "DESIGN": "Design",
+                "LIFESTYLE": "Lifestyle"
+            },
+            "ITEMS": {
+                "STOCK": "Stock",
+                "CRYPTO": "Crypto",
+                "GOLD": "Gold",
+                "SIX_JARS": "6 Jars",
+                "CMS": "CMS",
+                "LOYALTY": "Loyalty System",
+                "ECOMMERCE": "E-commerce",
+                "NEWS_BLOG": "News/Blog",
+                "REAL_ESTATE": "Real Estate",
+                "MUSIC": "Music",
+                "LOL": "League of Legends",
+                "PHOTOGRAPHY": "Photography",
+                "SNIPER_ARCHER": "Sniper/Archer",
+                "COFFEE": "Coffee",
+                "3D_PRINTING": "3D Printing",
+                "3D_DESIGN": "3D Design",
+                "MAKER_WORLD": "Maker World",
+                "HANDMADE": "Handmade",
+                "WEBAPP": "Webapp",
+                "BLOCKCHAIN": "Blockchain",
+                "AI": "AI",
+                "AR_VR": "AR/VR",
+                "UIUX_DESIGN": "UI/UX",
+                "ANIMATION": "Animation",
+                "GAME_DESIGN": "Game",
+                "FIGMA": "Figma",
+                "ADOBE": "Adobe Suite",
+                "MINIMALISM": "Minimalism",
+                "RAP": "Rap",
+                "LANDSCAPE": "Landscape",
+                "DAILY_LIFE": "Daily Life",
+                "STREET": "Street",
+                "INDIE_MUSIC": "Indie Music",
+                "ESPORTS": "eSports",
+                "SPORTS": "Sports",
+                "CAT_LOVER": "Cat Lover 🐈"
+            }
+        },
+        "CONTACT": {
+            "TITLE": "Contact",
+            "DESC_1": "I help you build scalable products and clean architectures.",
+            "DESC_2": "I dedicate 4 hours of \"deep work\" daily to ship high-quality code for your MVP.",
+            "DESC_3_PREFIX": "Interested in working together? Just send \"hi\" to my",
+            "EMAIL": "Email",
+            "DESC_3_SUFFIX": ". I’ll buy the coffee."
+        }
+    },
+    "FOOTER": {
+        "ADDRESS": "Phu Quoc, Viet Nam, 2023 - End of the Universe."
+    }
+}

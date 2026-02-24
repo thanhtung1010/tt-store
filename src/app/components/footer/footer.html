@@ -1,0 +1,11 @@
+<section id="footer-wrapper" class="flex flex-col md:flex-row items-start md:items-center justify-between text-sm gap-4 md:gap-0">
+    <address>
+        {{ 'FOOTER.ADDRESS' | translate }}
+    </address>
+    <span class="ml-auto!"> © 2.0.0  |  <url-layout [href]="href()" target="_top">
+            <ng-container hrefContent>
+                <span class="text-link font-semibold">{{host()}}</span> 
+            </ng-container>
+        </url-layout>
+    </span>
+</section>

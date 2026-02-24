@@ -1,0 +1,61 @@
+<section class="tfe-section">
+    <h5 class="tfe-section-title">{{ 'MAIN.PHILOSOPHY.TITLE' | translate }}</h5>
+    <p class="tfe-section-paragraph" [innerHTML]="'MAIN.PHILOSOPHY.CONTENT' | translate">
+    </p>
+</section>
+
+<section class="tfe-section">
+    <h5 class="tfe-section-title">{{ 'MAIN.PROJECTS.TITLE' | translate }}</h5>
+    <p class="tfe-section-paragraph">
+        <url-layout [href]="redocHref()">
+            <ng-container hrefContent>
+                <span class="text-link font-semibold">{{ 'MAIN.PROJECTS.REDOC_TITLE' | translate }}</span> 
+            </ng-container>
+        </url-layout> {{ 'MAIN.PROJECTS.REDOC_DESC' | translate }}
+    </p>
+    <p class="tfe-section-paragraph">
+        <url-layout [href]="loyaltyHref()">
+            <ng-container hrefContent>
+                <span class="text-link font-semibold">{{ 'MAIN.PROJECTS.LOYALTY_TITLE' | translate }}</span>
+            </ng-container> 
+        </url-layout> {{ 'MAIN.PROJECTS.LOYALTY_DESC' | translate }}
+    </p>
+    <p class="tfe-section-paragraph">
+        <span class="text-highlight">{{ 'MAIN.PROJECTS.OMSIM_TITLE' | translate }}</span> {{ 'MAIN.PROJECTS.OMSIM_DESC' | translate }}
+    </p>
+</section>
+
+<section class="tfe-section">
+    <h5 class="tfe-section-title">{{ 'MAIN.BUCKET.TITLE' | translate }}</h5>
+    <div class="tfe-bucket_list-wrapper">
+        <ul class="tfe-bucket_list">
+            @for (item of bucketItems.items();let i = $index; track i) {
+                <li class="tfe-bucket_list-item">
+                    <svg-loader [class]="item.color" [src]="item.svg"></svg-loader>
+                    <p>
+                        {{ item.text | translate }}
+                    </p>
+                </li>
+            }
+        </ul>
+    </div>
+</section>
+
+<section class="tfe-section">
+    <h5 class="tfe-section-title">{{ 'MAIN.CONTACT.TITLE' | translate }}</h5>
+    <p class="tfe-section-paragraph">
+        {{ 'MAIN.CONTACT.DESC_1' | translate }}
+    </p>
+    <p class="tfe-section-paragraph">
+        {{ 'MAIN.CONTACT.DESC_2' | translate }}
+    </p>
+    <p class="tfe-section-paragraph">
+        {{ 'MAIN.CONTACT.DESC_3_PREFIX' | translate }}
+        <url-layout class="text-nowrap" [href]="mailToHref()" target="_self">
+            <ng-container hrefContent>
+                <span class="text-link font-bold pr-1">{{ 'MAIN.CONTACT.EMAIL' | translate }}</span>
+                <svg-loader class="inline text-link" [src]="svgChat()" size="15"></svg-loader>
+            </ng-container>
+        </url-layout>{{ 'MAIN.CONTACT.DESC_3_SUFFIX' | translate }}
+    </p>
+</section>

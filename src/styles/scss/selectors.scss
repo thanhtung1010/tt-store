@@ -1,0 +1,21 @@
+@use "variable" as var;
+@reference "tailwindcss";
+
+@layer selectors {
+
+    tfe-root {
+        @apply h-full w-full overflow-auto block relative z-0 px-3 py-2 md:px-4 lg:px-6 lg:py-4 xl:px-10 xl:py-6;
+    }
+
+    svg-loader {
+        @apply inline-block w-fit h-fit;
+    }
+
+    theme-toggle {
+        @apply inline-block w-fit h-fit;
+    }
+
+    url-layout {
+        @apply cursor-pointer;
+    }
+}

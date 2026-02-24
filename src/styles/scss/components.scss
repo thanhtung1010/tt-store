@@ -1,0 +1,132 @@
+@use "variable" as var;
+@reference "tailwindcss";
+
+@layer components {
+    .#{var.$primary-prefix-cls} {
+
+        &-header {
+            @apply max-w-4xl mx-auto lg:pt-6!;
+        }
+
+        &-main {
+            @apply max-w-4xl mx-auto;
+        }
+
+        &-section {
+            @apply relative border-t border-(--border-color) py-5;
+
+            &-title {
+                @apply block w-fit p-2 pr-4 bg-(--bg-color) text-(--text-color-lighter) uppercase font-bold absolute top-0 left-0 right-0 -translate-y-1/2;
+            }
+
+            &-highlight_title {
+                @apply block p-4 bg-(--bg-color-dark) text-(--bg-color-light) uppercase font-bold;
+            }
+
+            &:has(.tfe-section-highlight_title) {
+                @apply border-t-0;
+            }
+
+            &-paragraph {
+                @apply mx-4! mb-1!;
+            }
+        }
+
+        &-intro {
+            @apply grid grid-cols-1 md:grid-cols-2 gap-4 mt-4;
+
+            &-article {
+                @apply relative mb-4 min-h-12;
+
+                &-content {
+                    @apply ml-8! mb-2!;
+                }
+
+                &-content:last-child {
+                    @apply mb-0!;
+                }
+            }
+
+            &-article:last-child {
+                @apply mb-0;
+            }
+
+            &-article::before {
+                @apply content-[attr(title-content)] uppercase border-r h-full absolute top-0 left-0  text-(--text-color-lighter) text-end font-bold text-nowrap;
+                writing-mode: sideways-lr;
+            }
+        }
+
+        &-bucket_list {
+            @apply columns-3 gap-y-2 md:gap-y-4 list-none min-w-2xl;
+
+            &-wrapper {
+                @apply px-4 w-full overflow-y-auto pb-3 md:pb-0;
+            }
+
+            &-item {
+                @apply flex items-center gap-1 mb-1;
+            }
+        }
+
+        &-footer {
+            @apply max-w-4xl mx-auto lg:pb-6!;
+        }
+
+        &-setting {
+            @apply fixed bottom-5 right-5 w-fit h-fit z-9999;
+
+            &-wrapper {
+                @apply relative w-15 h-15 overflow-visible z-0;
+            }
+
+            &-button {
+                @apply relative w-full h-full bg-(--bg-color-light) cursor-pointer border-4 border-(--border-color) rounded-4xl z-2;
+            }
+
+            &-menu {
+                @apply absolute bottom-0 right-0 z-1 border-4 w-40 h-50 overflow-y-auto overflow-x-hidden border-(--border-color) rounded-4xl bg-(--bg-color) p-3;
+            }
+
+            &-item {
+                @apply flex items-center justify-between gap-2 font-semibold min-w-30 mb-1;
+            }
+        }
+
+        &-cat-loading {
+            @apply fixed bottom-0 left-1/2 -translate-x-1/2 z-99999;
+        }
+
+        &-bg-cat-loading {
+            @apply fixed bottom-0 left-0 w-full h-full backdrop-blur-md z-99998;
+        }
+
+        &-hidden-scroll {
+            @apply overflow-hidden!;
+        }
+
+        &-liquid {
+            @apply relative;
+
+            &-effect {
+                @apply absolute z-0 inset-0 backdrop-blur-[3px] filter-[url(#glass-distortion)] overflow-hidden isolate;
+            }
+
+            &-tint {
+                @apply z-10 absolute inset-0 bg-white/25;
+            }
+
+            &-shine {
+                @apply absolute inset-0 z-20 overflow-hidden shadow-[inset_2px_2px_1px_0_rgba(255,255,255,0.5),inset_-1px_-1px_1px_1px_rgba(255,255,255,0.5)];
+            }
+        }
+
+        &-interest_map {
+            @apply flex justify-center items-center overflow-hidden w-full h-60 md:h-auto mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] md:mask-none;
+
+            svg {
+                @apply shrink-0;
+            }
+        }
+    }
+}

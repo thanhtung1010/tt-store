@@ -1,0 +1,159 @@
+@use "variable" as var;
+@reference "tailwindcss";
+
+.#{var.$primary-prefix-cls} {
+
+    &-leave_slide_y {
+        @apply transition-all ease-out duration-500 translate-y-full;
+    }
+
+    &-enter_slide_y {
+        @apply animate-[enter-slide-y_500ms_ease-out_forwards];
+    }
+
+    &-enter_slide_fade_y {
+        @apply animate-[enter-slide-fade-y_500ms_ease-out_forwards];
+    }
+
+    &-leave_slide_x {
+        @apply transition-all ease-out duration-500 translate-x-full;
+    }
+
+    &-leave_slide_x- {
+        @apply transition-all ease-out duration-500 -translate-x-full;
+    }
+
+    &-enter_slide_x {
+        @apply animate-[enter-slide-x_500ms_ease-out_forwards];
+    }
+
+    &-enter_slide_fade_x {
+        @apply animate-[enter-slide-fade-x_500ms_ease-out_forwards];
+    }
+
+    &-leave_fade {
+        @apply animate-[leave-fade_500ms_ease-out_forwards];
+    }
+
+    &-enter_fade {
+        @apply animate-[enter-fade_500ms_ease-out_forwards];
+    }
+
+    &-menu_enter {
+        @apply animate-[menu-enter_500ms_ease-out_forwards];
+    }
+
+    &-menu_leave {
+        @apply animate-[menu-leave_500ms_ease-out_forwards];
+    }
+}
+
+@keyframes menu-enter {
+    0% {
+        opacity: 0;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+
+    50% {
+        opacity: 1;
+        width: 60px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        width: 160px;
+        height: 200px;
+        overflow-y: auto;
+    }
+}
+
+@keyframes menu-leave {
+    0% {
+        opacity: 1;
+        width: 160px;
+        height: 200px;
+        overflow-y: auto;
+    }
+
+    50% {
+        opacity: 1;
+        width: 60px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    100% {
+        opacity: 0;
+        width: 60px;
+        height: 60px;
+        overflow: hidden;
+    }
+}
+
+@keyframes enter-fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes leave-fade {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes enter-slide-fade-y {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes enter-slide-fade-x {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes enter-slide-y {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes enter-slide-x {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}

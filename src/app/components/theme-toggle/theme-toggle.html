@@ -1,0 +1,138 @@
+<div
+    [style]="`width: ${btnWidth}px; height: ${btnHeight}px;`"
+    [class]="`theme-toogle cursor-pointer rounded-full overflow-hidden *:transition-all ${durationCls}`"
+    (click)="disabled ? $event.preventDefault() : onClickToggle()"
+>
+    <div [class]="`w-full h-full relative rounded-full overflow-hidden *:transition-all ${durationCls}`" [ngClass]="{
+        'bg-[#5E9AE3]': value,
+        'bg-[#1E1D2A]': !value
+    }">
+        <!-- dark side -->
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(mdPolygonToggle()) | async"
+            class="flex absolute top-[50%] w-[34.125%] h-[75%] -translate-y-[50%]"
+            [ngClass]="{
+                'left-0 -translate-x-[140%]': value,
+                'left-[11.25%] translate-x-0': !value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(smPolygonToggle()) | async"
+            class="flex absolute top-[50%] -translate-y-[50%] w-[34.875%] h-[52.5%]"
+            [ngClass]="{
+                'left-0 -translate-x-[120%]': value,
+                'left-[10%] translate-x-0': !value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[60%] -translate-y-[60%] w-[63.75%] h-[107.5%] scale-x-[-1]"
+            [ngClass]="{
+                'right-0 translate-x-full': value,
+                '-right-[7.125%] translate-x-0': !value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[70%] -translate-y-[67.5%] w-[83.75%] h-[127.5%] scale-x-[-1]"
+            [ngClass]="{
+                'right-0 translate-x-full': value,
+                '-right-[17.125%] translate-x-0': !value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[80%] -translate-y-[73%] w-[113.75%] h-[157.5%] scale-x-[-1]"
+            [ngClass]="{
+                'right-0 translate-x-full': value,
+                '-right-[29.625%] translate-x-0': !value
+            }"
+        >
+        </span>
+        <!-- light side -->
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(cloudBlurToggle()) | async"
+            class="flex absolute -bottom-[3%] -right-[3%] w-full h-[87.5%]"
+            [ngClass]="{
+                'translate-y-full': !value,
+                'translate-y-0': value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(cloudLightToggle()) | async"
+            class="flex absolute -bottom-[6%] -right-[6%] w-full h-[87.5%]"
+            [ngClass]="{
+                'translate-y-[125%]': !value,
+                'translate-y-0': value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[60%] translate-y-[-60%] w-[63.75%] h-[107.5%]"
+            [ngClass]="{
+                'left-0 -translate-x-[129%]': !value,
+                '-left-[7.125%] translate-x-0': value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[70%] translate-y-[-67.5%] w-[83.75%] h-[127.5%]"
+            [ngClass]="{
+                'left-0 -translate-x-[110%]': !value,
+                '-left-[17.125%] translate-x-0': value
+            }"
+        >
+        </span>
+        <span
+            [innerHTML]="svg.getSvgInnerHTML(bgLightToggle()) | async"
+            class="flex absolute top-[80%] translate-y-[-73%] w-[113.75%] h-[157.5%]"
+            [ngClass]="{
+                'left-0 -translate-x-full': !value,
+                '-left-[29.625%] translate-x-0': value
+            }"
+        >
+        </span>
+        <!-- thumb -->
+        <span
+            class="flex absolute top-[50%] translate-y-[-50%] w-[43.75%] h-[87.5%]"
+            [ngClass]="{
+                'left-[3.125%]': value,
+                'left-[53.125%]': !value
+            }"
+        >
+            <span
+                class="flex relative w-full h-full"
+                [ngClass]="{
+                    'rotate-0': value,
+                    'rotate-180': !value
+                }"
+            >
+                <span
+                    [innerHTML]="svg.getSvgInnerHTML(moonToggle()) | async"
+                    class="flex absolute left-0 top-0 w-full h-full"
+                    [ngClass]="{
+                        'opacity-0': value,
+                        'opacity-100': !value
+                    }"
+                >
+                </span>
+                <span
+                    [innerHTML]="svg.getSvgInnerHTML(sunToggle()) | async"
+                    class="flex absolute left-0 top-0 w-full h-full"
+                    [ngClass]="{
+                        'opacity-100': value,
+                        'opacity-0': !value
+                    }"
+                >
+                </span>
+            </span>
+        </span>
+    </div>
+</div>

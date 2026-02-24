@@ -1,0 +1,44 @@
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "skipLibCheck": true,
+        "isolatedModules": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "ES2022",
+        "module": "preserve",
+        "moduleResolution": "bundler",
+        "paths": {
+            "@components": ["./src/app/components/index.ts"],
+            "@directives": ["./src/app/directives/index.ts"],
+            "@interfaces": ["./src/app/interfaces/index.ts"],
+            "@services": ["./src/app/services/index.ts"],
+            "@signals": ["./src/app/signals/index.ts"],
+            "@enums": ["./src/app/enums/index.ts"],
+            "@data": ["./src/app/data/index.ts"]
+        }
+    },
+    "angularCompilerOptions": {
+        "enableI18nLegacyMessageIdFormat": false,
+        "strictInjectionParameters": true,
+        "strictInputAccessModifiers": true,
+        "typeCheckHostBindings": true,
+        "strictTemplates": true
+    },
+    "files": [],
+    "references": [
+        {
+            "path": "./tsconfig.app.json"
+        },
+        {
+            "path": "./tsconfig.spec.json"
+        }
+    ]
+}

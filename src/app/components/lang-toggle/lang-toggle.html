@@ -1,0 +1,46 @@
+<div
+    [style]="`width: ${btnWidth}px; height: ${btnHeight}px;`"
+    [class]="`lang-toogle cursor-pointer rounded-full overflow-hidden *:transition-all ${durationCls}`"
+    (click)="disabled ? $event.preventDefault() : onClickToggle()"
+>
+    <div [class]="`w-full h-full relative rounded-full overflow-hidden *:transition-all ${durationCls}`" [ngClass]="{
+        'bg-[#FEFE91]': value,
+        'bg-[#81B7F8]': !value
+    }">
+        <!-- dark side -->
+        <div class="h-[87.5%] w-[43.75%] rounded-full absolute top-[6.25%]" [ngClass]="{
+            'bg-[#DA251D] right-[3.125%]': value,
+            'bg-[#F0F0F0] right-[53.125%]': !value
+        }">
+            <div [class]="`w-full h-full rounded-full relative z-0 *:transition-all ${durationCls}`">
+                <span
+                    [innerHTML]="svg.getSvgInnerHTML(start()) | async"
+                    class="flex absolute top-1/2 left-1/2 w-1/2 h-1/2 -translate-y-1/2 -translate-x-1/2 z-3"
+                    [ngClass]="{
+                        'rotate-0': value,
+                        '-rotate-180 opacity-0': !value
+                    }"
+                >
+                </span>
+                <span
+                    [innerHTML]="svg.getSvgInnerHTML(border()) | async"
+                    class="flex absolute top-1/2 left-1/2 w-[95%] h-[95%] -translate-y-1/2 -translate-x-1/2 z-2"
+                    [ngClass]="{
+                        'text-[#DA251D]': value,
+                        'text-[#FFFFFF]': !value
+                    }"
+                >
+                </span>
+                <span
+                    [innerHTML]="svg.getSvgInnerHTML(en()) | async"
+                    class="flex w-full h-full z-1 rotate-0 opacity-100"
+                    [ngClass]="{
+                        'rotate-180 opacity-0': value,
+                        'rotate-0 opacity-100': !value
+                    }"
+                >
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

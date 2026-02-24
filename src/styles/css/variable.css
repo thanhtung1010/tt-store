@@ -1,0 +1,33 @@
+:root {
+    --bg-color-dark: #101828;
+    --bg-color: #F5F5F5;
+    --bg-color-light: #ffffff;
+
+    --text-color: rgba(0, 0, 0, 0.5);
+    --text-color-lighter: rgba(0, 0, 0, 0.3);
+    
+    --border-color: rgba(0, 0, 0, 0.5);
+
+    --scroll-bar-color: rgba(0, 0, 0, 0.5);
+    --scroll-bar-hover-color: rgba(0, 0, 0, 1);
+
+    --font-size: 14px;
+    --font-weight: 400;
+
+    --text-sm: 12px;
+    --text-lg: 16px;
+}
+
+:root.dark {
+    --bg-color-dark: #F5F5F5;
+    --bg-color: #101828;
+    --bg-color-light: #222222;
+
+    --text-color: #F5F5F5;
+    --text-color-lighter: rgba(255, 255, 255, 0.7);
+    
+    --border-color: #F5F5F5;
+
+    --scroll-bar-color: rgba(255, 255, 255, 0.5);
+    --scroll-bar-hover-color: rgba(255, 255, 255, 1);
+}
