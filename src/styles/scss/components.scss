@@ -57,18 +57,6 @@
             }
         }
 
-        &-bucket_list {
-            @apply columns-3 gap-y-2 md:gap-y-4 list-none min-w-2xl;
-
-            &-wrapper {
-                @apply px-4 w-full overflow-y-auto pb-3 md:pb-0;
-            }
-
-            &-item {
-                @apply flex items-center gap-1 mb-1;
-            }
-        }
-
         &-footer {
             @apply max-w-4xl mx-auto lg:pb-6!;
         }
@@ -118,14 +106,6 @@
 
             &-shine {
                 @apply absolute inset-0 z-20 overflow-hidden shadow-[inset_2px_2px_1px_0_rgba(255,255,255,0.5),inset_-1px_-1px_1px_1px_rgba(255,255,255,0.5)];
-            }
-        }
-
-        &-interest_map {
-            @apply flex justify-center items-center overflow-hidden w-full h-60 md:h-auto mask-[linear-gradient(to_right,transparent,black_15%,black_85%,transparent)] md:mask-none;
-
-            svg {
-                @apply shrink-0;
             }
         }
     }

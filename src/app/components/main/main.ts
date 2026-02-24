@@ -1,9 +1,7 @@
 import { Component, OnInit, signal } from '@angular/core';
-import { BUCKET_LIST_DATA } from '@data';
-import { ArraySignal, IBucketListItem } from '@interfaces';
+import { TranslatePipe } from '@ngx-translate/core';
 import { SvgLoaderComponent } from '../svg-loader/svg-loader';
 import { URLLayoutComponent } from '../url-layout/url-layout';
-import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
     selector: 'main',
@@ -17,7 +15,6 @@ export class MainComponent implements OnInit {
     protected readonly mailToHref = signal(
         'mailto:trinhthanhtung1010@gmail.com?Subject=Hi!&body=I%20saw%20you%20on%20your%20portfolio.'
     );
-    protected readonly bucketItems: ArraySignal<IBucketListItem> = BUCKET_LIST_DATA.clone();
 
     constructor() {}
 
